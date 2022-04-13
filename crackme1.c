@@ -1,10 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
+
+// Password is letmein
+char *pw = "letmein";
+
 
 int check_pw(char * guess)
 {
-  // Password is letmein
-  char pw[] = "letmein";
   // Check if the password matches the pw string
   return (0 == strcmp(pw, guess));
 }
